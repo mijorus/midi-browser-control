@@ -1,0 +1,24 @@
+{
+    "name": "Midi browser control",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "service_worker": "/background/background.js"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+    },
+    "options_page": "/options/index.html",
+    "action": {
+        "default_popup": "/popup/index.html"
+    }
+}
