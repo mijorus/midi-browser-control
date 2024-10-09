@@ -5,7 +5,8 @@
     "permissions": [
         "tabs",
         "activeTab",
-        "scripting"
+        "scripting",
+        "debugger"
     ],
     "host_permissions": [
         "http://*/*",

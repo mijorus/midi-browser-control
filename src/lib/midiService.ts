@@ -19,5 +19,5 @@ export async function stopService() {
 } 
 
 function onMidiMessage(event: MIDIMessageEvent) {
-    chrome.runtime.sendMessage({ action: "midiMessage", data: event });
+    chrome.runtime.sendMessage({ action: "midiMessage", data: event.data });
 }

@@ -1,5 +1,13 @@
 export default {
     scrollTabs: (midiMessage: MIDIMessageEvent) => {
+        console.log('scrolltab', midiMessage);
+        
+        if (!midiMessage.data) {
+            return
+        }
+
+        const direction = midiMessage.data[2] > 64 ? 1 : -1
+
         chrome.tabs.query({ currentWindow: true }, function (tabs) {
             if (tabs.length <= 1) return;
 

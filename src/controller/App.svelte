@@ -3,11 +3,7 @@
     import * as service from "../lib/midiService";
 
     onMount(async () => {
-        const status = await service.requestPermission();
-        
-        if (status === 'granted') {
-            service.startService()
-        }
+        await service.startService();
     });
 </script>
 

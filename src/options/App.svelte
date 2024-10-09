@@ -4,5 +4,5 @@
 
 <main>
   <Alert>CIAO SONO UN ALERT</Alert>
-  <Button>TESTME</Button>
+  <Button href="/controller/index.html">OPEN Controller</Button>
 </main>
